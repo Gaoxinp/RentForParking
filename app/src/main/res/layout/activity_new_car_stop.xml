@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:theme="@android:style/Theme.Light">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/back_layout_main">
+        <View
+            android:layout_marginTop="20dp"
+            android:id="@+id/gray"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="#CDCDCD"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/gray"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="新增车位"
+                android:background="#FFFFFF"
+                android:textColor="#AAAAAA"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/normalProvinceLinearLayout_newCarStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_below="@id/gray">
+
+            <Spinner
+                android:id="@+id/provinceSpinner_newCarStop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_spinner"
+                ></Spinner>
+
+            <Spinner
+                android:id="@+id/citySpinner_newCarStop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_spinner"
+                android:layout_marginTop="15dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/areaSpinner_newCarStop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_spinner"
+                android:layout_marginTop="15dp"></Spinner>
+
+            <EditText
+                android:id="@+id/detailPosEditText_newcarstop_normal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="请填写详细位置"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/carPhone_newcarstop_normal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="车位手机号"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/straightProvinceLinearLayout_newCarStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_below="@id/gray">
+
+
+            <Spinner
+                android:id="@+id/straightCitySpinner_newCarStop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_spinner"></Spinner>
+
+            <Spinner
+                android:id="@+id/straightAreaSpinner_newCarStop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_spinner"
+                android:layout_marginTop="15dp"></Spinner>
+
+            <EditText
+                android:id="@+id/detailPosEditText_newcarstop_straight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="请填写详细位置"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/carPhone_newcarstop_straight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="车位手机号"
+                android:layout_marginTop="15dp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/normalProvinceLinearLayout_newCarStop"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#AAAAAA"></View>
+
+        <View
+            android:id="@+id/line_straight"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/straightProvinceLinearLayout_newCarStop"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#AAAAAA"
+            android:visibility="invisible"></View>
+
+
+
+
+        <Button
+            android:id="@+id/selectCarStopButton_newCarStop_normal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/line_normal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/activity_login_button_shape_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="绑定我的车位"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:visibility="visible"/>
+        <Button
+            android:id="@+id/selectCarStopButton2_newCarStop_straight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/line_straight"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/activity_login_button_shape_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="绑定我的车位"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

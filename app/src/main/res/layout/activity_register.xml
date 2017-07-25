@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.navigationbar.RegisterActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户注册:)"
+        android:textColor="#0765C5"
+        android:textSize="9pt"
+        android:id="@+id/textView2"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/new_account_name_PhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="#1A1A1A"
+        android:textSize="15dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/passwordET_register"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="密码（不少于六位,区分大小写）"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="#1A1A1A"
+        android:textColorHint="#A9A9A9"
+        android:textSize="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/new_account_name_PhoneNumber"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/againPasswordET_register"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="确认密码"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="#1A1A1A"
+        android:textColorHint="#A9A9A9"
+        android:textSize="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/passwordET_register"
+        android:layout_alignStart="@id/new_account_name_PhoneNumber" />
+
+    <TextView
+        android:id="@+id/new_account_annoucement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击了注册按钮，代表您已经同意了《有车位用户协议》"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/againPasswordET_register"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/new_account_register_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/activity_login_button_shape_normal"
+        android:text="注册"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        android:layout_below="@id/new_account_annoucement"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

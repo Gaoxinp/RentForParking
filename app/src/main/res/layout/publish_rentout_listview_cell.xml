@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/beginDate_publish_rentOut_listview_cell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/detailPos_publish_rentOut_listview_cell"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/duration_publish_rentOut_listview_cell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+
+    <TextView
+        android:id="@+id/money_publish_rentOut_listview_cell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+</LinearLayout>

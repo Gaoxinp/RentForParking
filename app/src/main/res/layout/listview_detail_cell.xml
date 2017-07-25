@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/timeTextView_listCell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/positionTextView_listCell"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/minsTextView_listCell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/moneyTextView_listCell"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+</LinearLayout>

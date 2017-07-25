@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/noLoginLinearLayout_mycarstop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您还没有登录，点击"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/toLoginButton_mycarstop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_login_button"
+            android:gravity="center_vertical"
+            android:text=" 登录"
+            android:textColor="#6959CD"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout_myCarStop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_mycarstop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/smssdk_gray"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="省份/\n直辖市"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/text_white"/>
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="市"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/text_white"/>
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="区/县"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/text_white"/>
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="详细地址"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/text_white"/>
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="状态"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/text_white"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView_mycarstop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearlayout_mycarstop"></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_myCarStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@mipmap/plus"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_gravity="top|left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

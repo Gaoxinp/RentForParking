@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:width="50dp" android:height="25dp">
+        <shape>
+            <!--设置背景透明-->
+            <solid android:color="#000000FF"></solid>
+
+        </shape>
+    </item>
+</layer-list>

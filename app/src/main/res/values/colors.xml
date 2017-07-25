@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0000</color>
+    <drawable name="activity_main_bt_login_normal">#9F79EE</drawable>
+    <drawable name="activity_main_bt_login_pressed">#5CACEE</drawable>
+    <color name="dropDownColor">#666666</color>
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+
+    <color name="transparent">#00FFFFFF</color>
+</resources>
